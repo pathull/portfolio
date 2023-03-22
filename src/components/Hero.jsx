@@ -23,21 +23,21 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <CoffeeCanvas />
+        <CoffeeCanvas />
       </div>
       <div className="absolute xs:bottom-4 bottom-12 w-full flex justify-center items-center">
         <a href="#work" className="p-3">
           <div className="w-[35px] h-[60px] rounded-full border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-            animate={{
-              y: [0,24,0]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: 'loop'
-            }}
-            className="w-4 h-4 rounded-full bg-secondary "
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-4 h-4 rounded-full bg-secondary "
             />
           </div>
         </a>

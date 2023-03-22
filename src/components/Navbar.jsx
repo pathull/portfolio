@@ -5,7 +5,6 @@ import {styles} from "../styles";
 import {navLinks} from "../constants";
 import {logo, menu, close} from "../assets";
 
-
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -58,10 +57,9 @@ const Navbar = () => {
                     active === nav.title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
-                    setActive(nav.title)
+                    setActive(nav.title);
                     setToggle(!toggle);
-                  }
-                  }
+                  }}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>

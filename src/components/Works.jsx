@@ -53,7 +53,7 @@ const ProjectCard = ({
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="cursor-pointer"
+      className="cursor-pointer w-auto h-auto"
       onClick={() => window.open(source_code_link, "_blank")}
     >
       <Tilt
