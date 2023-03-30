@@ -106,27 +106,6 @@ const projects = [
     image: suncheck,
     source_code_link: "https://github.com/pathull/SunCheck",
   },
-  {
-    name: "Survive Sandstorm",
-    description:
-      "Reaction game. Mouse and laptop -or- desktop required. Sound recommended. Click to play in browser.",
-    tags: [
-      {
-        name: "vanilla js",
-        color: "text-primary",
-      },
-      {
-        name: "html",
-        color: "text-primary",
-      },
-      {
-        name: "css",
-        color: "text-primary",
-      },
-    ],
-    image: survivesandstorm,
-    source_code_link: "https://pathull.github.io/Survive-Sandstorm/",
-  },
 ];
 
 export { projects };
