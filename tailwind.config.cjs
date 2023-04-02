@@ -20,7 +20,7 @@ module.exports = {
         md: "800px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.jpg')",
+        "hero-pattern": "url('/src/assets/herobg.webp')",
       },
     },
   },

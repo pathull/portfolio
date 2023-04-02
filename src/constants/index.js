@@ -1,7 +1,6 @@
 import {
   eventplanner,
   sociallite,
-  survivesandstorm,
   suncheck,
   crafters,
 } from "../assets";

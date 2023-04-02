@@ -1,4 +1,4 @@
-import {useState, useRef} from "react";
+import {useState} from "react";
 import {motion} from "framer-motion";
 
 import {styles} from "../styles";
@@ -79,7 +79,11 @@ const Gift = () => {
           {load ? (
             <p className="mt-10">Loading...</p>
           ) : (
-            <img src={img} className="mt-7 rounded-xl" />
+            <img
+              src={img}
+              alt={img ? "Cute image of dog or cat" : null}
+              className="mt-7 rounded-xl"
+            />
           )}
         </div>
       </motion.div>

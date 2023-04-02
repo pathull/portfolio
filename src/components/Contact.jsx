@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import {styles} from "../styles";
 import {SectionWrapper} from "../hoc";
 import {slideIn} from "../utilities/motion";
-import mypic from "../assets/mypic.png";
+import mypic from "../assets/mypic.webp";
 
 const Contact = () => {
   const formRef = useRef();
@@ -118,7 +118,7 @@ const Contact = () => {
       >
         <img
           src={mypic}
-          alt={"pic of pat the site owner"}
+          alt={"Picture of Patrick, the site owner"}
           className="rounded-xl"
         />
       </motion.div>

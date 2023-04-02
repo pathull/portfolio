@@ -67,7 +67,7 @@ const ProjectCard = ({
         <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt={name}
+            alt={`Image of the app ${name}`}
             className="w-full h-full object-cover rounded-xl"
           />
         </div>

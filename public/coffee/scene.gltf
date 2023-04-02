@@ -122,10 +122,10 @@
   ],
   "images": [
     {
-      "uri": "textures/Coffee_Mat_baseColor.png"
+      "uri": "textures/Coffee_Mat_baseColor.webp"
     },
     {
-      "uri": "textures/Coffee_Mat_normal.png"
+      "uri": "textures/Coffee_Mat_normal.webp"
     }
   ],
   "materials": [
