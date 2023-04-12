@@ -9,20 +9,47 @@ const Gift = () => {
   const [img, setImg] = useState(null);
   const [load, setLoad] = useState(false);
 
+  async function fetchWithTimeout(resource, options = {}) {
+    const {timeout = 8000} = options;
+
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), timeout);
+    const response = await fetch(resource, {
+      ...options,
+      signal: controller.signal,
+    });
+    clearTimeout(id);
+    return response;
+  }
+
   async function fetchCat() {
     setLoad(true);
-    const response = await fetch("https://cataas.com/cat/cute");
-    const cat = await response.blob();
-    setImg(URL.createObjectURL(cat));
-    setLoad(false);
+    try {
+      const response = await fetchWithTimeout("https://cataas.com/cat/cute", {
+        timeout: 6000,
+      });
+      const cat = await response.blob();
+      setImg(URL.createObjectURL(cat));
+      setLoad(false);
+    } catch (error) {
+      setLoad(false);
+      setImg("Sorry. The free 3rd party cat API must be down currently.")
+    }
   }
 
   async function fetchDog() {
     setLoad(true);
-    const response = await fetch("https://dog.ceo/api/breeds/image/random");
-    const dog = await response.json();
-    setImg(dog.message);
-    setLoad(false);
+    try {
+      const response = await fetch("https://dog.ceo/api/breeds/image/random", {
+        timeout: 6000,
+      });
+      const dog = await response.json();
+      setImg(dog.message);
+      setLoad(false);
+    } catch (error) {
+      setLoad(false);
+      setImg("Sorry. The free 3rd party dog API must be down currently.")
+    }
   }
 
   const handleCatClick = () => {
