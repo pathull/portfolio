@@ -6,6 +6,7 @@ import eventplanner from "./eventplanner.webp";
 import sociallite from "./sociallite.webp";
 import suncheck from "./suncheck.webp";
 import crafters from "./crafters.webp";
+import candidpic from "./candidpic.webp";
 
 export {
   logo,
@@ -15,4 +16,5 @@ export {
   sociallite,
   suncheck,
   crafters,
+  candidpic,
 };

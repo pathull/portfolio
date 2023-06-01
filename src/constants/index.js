@@ -3,6 +3,7 @@ import {
   sociallite,
   suncheck,
   crafters,
+  candidpic
 } from "../assets";
 
 export const navLinks = [
@@ -21,6 +22,27 @@ export const navLinks = [
 ];
 
 const projects = [
+  {
+    name: "Candid AI",
+    description:
+      "Fact checker app using OpenAI's powerful chatgpt-turbo-3.5 model and prompt engineering. AI answers with True or False or I Don't Know. 60+ Github clones in 1 Day.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-primary",
+      },
+      {
+        name: "ai",
+        color: "text-primary",
+      },
+      {
+        name: "prompt engineering",
+        color: "text-primary",
+      },
+    ],
+    image: candidpic,
+    source_code_link: "https://github.com/pathull/thesis-project-eventPlanner",
+  },
   {
     name: "Event Planner",
     description:
@@ -87,7 +109,7 @@ const projects = [
   {
     name: "SunCheck",
     description:
-      "SunCheck is a health dashboard app that lets users update and track their Vitamin-D consumption.",
+      "SunCheck is a health dashboard app that lets users update and track their Vitamin-D consumption. Users can download a PDF report.",
     tags: [
       {
         name: "react",
