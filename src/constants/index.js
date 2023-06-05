@@ -41,7 +41,7 @@ const projects = [
       },
     ],
     image: candidpic,
-    source_code_link: "https://github.com/pathull/thesis-project-eventPlanner",
+    source_code_link: "https://github.com/pathull/candid-ai",
   },
   {
     name: "Event Planner",
@@ -62,7 +62,7 @@ const projects = [
       },
     ],
     image: eventplanner,
-    source_code_link: "https://github.com/pathull/candid-ai",
+    source_code_link: "https://github.com/pathull/thesis-project-eventPlanner",
   },
   {
     name: "Social-lite",
