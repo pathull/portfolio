@@ -62,7 +62,7 @@ const projects = [
       },
     ],
     image: eventplanner,
-    source_code_link: "https://github.com/pathull/thesis-project-eventPlanner",
+    source_code_link: "https://github.com/pathull/candid-ai",
   },
   {
     name: "Social-lite",
